@@ -1,0 +1,534 @@
+/* blue primary #26468f */
+/* red primary ##fd1d27 */
+/* gray primary #ebebeb */
+/* white #ebebeb */
+/* black primary ##32302f */
+
+*{
+  padding: 0;
+  margin: 0;
+}
+
+body{
+  box-sizing: border-box;
+  position: relative;
+  font-family: 'Roboto', sans-serif;
+}
+
+header{
+  position: relative;
+}
+
+p{
+  font-weight: 500;
+  line-height: 1.5em;
+  font-size: 16px;
+  color: #32302f;
+}
+
+header .container{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 30px 32px 0 0;
+  position: relative;
+  height: 100px;
+  background-color: rgba(0,0,0,0.15);
+}
+
+.brand{
+  display: flex;
+  align-items: flex-end;
+  padding: 0 32px;
+  margin-top: 20px
+}
+
+.brand img{
+  width: auto;
+  margin-right: 10px;
+}
+.brand p{
+  color: #26468f;
+  font-weight: 500;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+.brand p span{
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+.retangle{
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 30px;
+  background: #26468f;
+}
+
+nav a{
+  color: #ebebeb;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 10px 24px;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  background-color: #26468f;
+  cursor: pointer;
+  z-index: 999;
+}
+
+.benefit, .about, .formulir, .steps{
+  width: 100%;
+}
+
+.benefit .container, .about .container, .formulir .container,.steps .container{
+  margin: auto;
+  padding: 0 32px;
+  margin-bottom: 100px;
+}
+.benefit .container h2, .about .container h2, .formulir .container h2, .steps .container h2{
+  font-size: 24px;
+  font-weight: 700;
+  color: #32302f;
+  text-align: center;
+  margin-bottom: 20px;
+  margin: 30px 0;
+}
+
+.benefit .container h2 span, .about .container h2 span, .formulir .container h2 span, .steps .container h2 span, .banner .container h1 span{
+  color: #26468f;
+}
+
+.benefit-item{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.benefit-item p{
+  color: #32302f;
+  order: 2;
+  text-align: center;
+}
+
+.benefit-item p span{
+  font-weight: 700;
+  text-align: center;
+}
+.benefit-item img{
+  margin: 10px;
+  height: 44px;
+}
+
+.about .container{
+  display: flex;
+  flex-direction:column;
+  align-items: center;
+}
+.about p{
+  text-align: center;
+}
+
+.about a, form button, .free-btn{
+  color: #ebebeb;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 12px 24px;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  background-color: #26468f;
+  margin-top: 40px;
+  display: inline-block;
+  text-align: center;
+  outline: none;
+  box-shadow: 8px 8px 0 rgba(0,0,0,0.15);
+  cursor: pointer;
+}
+
+.formulir .subtitle{
+  font-size: 18px;
+  text-align: center;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+form .field{
+  display: flex;
+  flex-direction: column;
+  font-size: 18px;
+  font-weight: 500;
+  color: #32302f;
+}
+
+form .field label{
+  margin-top: 20px;
+  color: #32302f;
+}
+
+form .field input{
+  padding: 10px 12px;
+  margin-top: 4px;
+  font-size: 16px;
+  color: #32302f;
+  border-radius: 4px;
+  border: 1px solid rgba(0,0,0,0.25);
+  transition: all 0.7s ease;
+}
+form .field input:focus{
+  border: 1px solid #26468f;
+  outline: 1px solid #26468f;
+  background-color: rgba(0,0,0,0.15);
+}
+#phone {
+  -moz-appearance: textfield;
+}
+#phone::-webkit-inner-spin-button {
+  display: none;
+}
+#phone::-webkit-outer-spin-button,
+#phone::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+#terms-label{
+  visibility: hidden;
+}
+
+form .field .credit-card-list{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-top: 4px;
+}
+
+.footer-form .field label{
+ visibility: hidden;
+}
+.footer-form .field a{
+  font-size: 14px;
+  color: #26468f;
+  margin-bottom: 40px;
+ }
+ 
+.footer-form .checkbox-agree{
+  font-size: 14px;
+ }
+ form button{
+   min-width: 200px;
+ }
+.formulir .description p{
+  font-size: 14px;
+  margin-top: 40px;
+  color: gray;
+  font-style: italic;
+}
+
+.checkbox-agree{
+  margin-top: 30px;
+}
+
+.step-list{
+  display: grid;
+  gap: 20px;
+  grid-template-rows: repeat(4, 1fr);
+  width: 100%;
+}
+.step-list li{
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  position: relative;
+}
+.step-list li:before{
+  padding: 6px;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  height: 10px;
+  margin-bottom: 10px;
+  width: 10px;
+  font-weight: 600;
+  background-color: #fd1d27;
+  color: white;
+  border-radius: 100%;
+}
+
+.step-list li::after{
+  content: "";
+  display: block;
+  height: 60px;
+  width: 2px;
+  background-color: gray;
+}
+
+.step-list li:nth-child(1)::before{
+  content: "1";
+}
+.step-list li:nth-child(2)::before{
+  content: "2";
+}
+.step-list li:nth-child(3)::before{
+  content: "3";
+}
+.step-list li:nth-child(4)::before{
+  content: "4";
+}
+.step-list li:nth-child(4)::after{
+  width: 0;
+}
+.step-list li .icon{
+  position: relative;
+  width: 60px;
+  height: 60px;
+  border: 2px solid #fd1d27;
+  border-radius: 100%;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background-color: #ebebeb;
+}
+.step-list li .text{
+  margin: 10px 0;
+}
+
+footer{
+  background: #26468f;
+}
+footer .container{
+  display: flex;
+  align-items: center;
+  padding: 14px 64px;
+}
+footer .container span{
+  color: white;
+  font-weight: 300;
+  text-align: center;
+}
+
+.banner-image{
+  margin-top: 30px;
+  min-height: 250px;
+  width: 100%;
+  position: relative;
+  background: no-repeat top/100% url('banner-phone.jpg');
+}
+
+.banner .container{
+  padding: 0 32px;
+  position: relative;
+}
+.banner-content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #32302f;
+}
+.banner .container img{
+  width: 44px;
+  margin-right: 10px;
+}
+.redefining{
+  margin: 20px 0;
+  display: flex;
+  align-items: flex-end;
+  color: #26468f;
+}
+.redefining span{
+  font-weight: 700;
+}
+.slash{
+  color: #fd1d27;
+}
+.banner .container h1{
+  font-size: 22px;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin: 30px 0;
+}
+.banner .container h1 span{
+  letter-spacing: 1px;
+  font-size: 26px;
+}
+.banner .container p span{
+  font-weight: 700;
+}
+
+.free-btn{
+  width: 300px;
+}
+
+
+@media screen and (min-width: 768px){
+  header .container{
+    padding: 30px 64px 0 0;
+  }
+  .brand{
+    padding: 0 64px;
+    margin-top: -70px
+  }
+  
+  .brand p{
+    font-size: 16px;
+  }
+  
+  .brand p span{
+    font-size: 24px;
+  }
+  .benefit .container, .about .container, .formulir .container{
+    padding: 0 64px;
+  }
+  .steps .container{
+    padding: 0 180px;
+  }
+  footer .container{
+    padding: 14px 200px;
+  }
+  .benefit .container h2, .about .container h2, .formulir .container h2, .steps .container h2{
+    font-size: 28px;
+  }
+ 
+
+  .benefit-container{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+  }
+  
+  .benefit-item{
+    flex-direction: row;
+    justify-content: flex-end;
+    padding-right: 20px;
+  }
+ 
+  .benefit-item p{
+    order: unset;
+    text-align: right;
+    margin-right: 10px;
+  }
+
+  .benefit-item.benefit-item-right{
+    justify-content: flex-start;
+    padding-left: 20px;
+  }
+  .benefit-item.benefit-item-right p{
+    order: 1;
+    text-align: left;
+    margin-left: 10px;
+  }
+
+  .formulir-content form{
+    max-width: 700px;
+    margin: auto;
+  }
+  form .field{
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  form .field label{
+    margin-right: 40px;
+    margin-top: 10px;
+    text-align: right;
+    width:100%;
+  }
+
+  form .field input{
+    margin-top: 10px;
+    min-width: 400px;
+  }
+  .creditCard{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+  }
+  .creditCard p{
+    text-align: right;
+    margin-top: 10px;
+    font-size: 18px;
+  }
+  .credit-card-list{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 40px;
+    margin-top: 10px;
+  }
+  .checkbox-item input{
+    padding-right: 2px;
+  }
+  .terms{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+  }
+  .terms .content{
+    margin-top: 10px;
+    width: 400px;
+    margin-left: 40px;
+    display: block;
+  }
+  .checkbox-agree{
+    display: flex;
+    align-items: flex-start;
+  }
+  .checkbox-agree label{
+    font-size: 14px;
+    margin-top: 0;
+    text-align: left;
+    margin-left: 4px;
+  }
+
+  .step-list{
+    gap: 0;
+    grid-template-rows: unset;
+    grid-template-columns: repeat(4, 1fr);
+  }
+  
+  .step-list li .icon::after{
+    content: "";
+    display: block;
+    width: 200px;
+    height: 1px;
+    background-color: gray;
+    position: absolute;
+    right: 0;
+    transform: translateX(100%);
+  }
+  .step-list li:nth-child(4) .icon::after, .step-list li::after{
+    display: none;
+  }
+  .banner{
+    position: relative;
+  }
+  .banner-image{
+    min-height: 500px;
+    background: no-repeat top/100% url('banner-large.jpg');
+  }
+  
+  .banner .container{
+    padding: 32px 64px 0 32px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    max-width: 500px;
+    max-height: 380px;
+    display: flex;
+    justify-content: flex-end;
+  }
+  .banner-content{
+    display: flex;
+    align-items: flex-end;
+    text-align: right;
+  }
+}
